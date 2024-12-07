@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script> 
+    var janelaAberta = window.open('','','width=400, heithg=400')//Aqui normalmente a gente colocaria links pra algum lugar
+    //mas como só queremos abrir uma janela vazia vai funcionar sem isso(Esse é o codigo pro pop-up aparecer)
+    //Obs:é meio obvio mas na linha 5 usamos o window.open(isso que abre a janela obviamente)
+    function testarjanela(){
+        if(janelaAberta.closed){//codigo que diz se a janela ta fechada ou aberta (.closed ajuda a indentificar)
+            alert('Janela foi fechada');
+        }else{
+            alert('janela está aberta')
+        }
+
+    }
+ </script>
+
+
+</head>
+<body>
+    <button type="button" onclick="testarjanela()"> Testar janela</button>
+</body>
+</html>
+
+<!--Esse codigo faz o seguinte, se a gente abrir ele, automaticamente um pop-up vai ser aberto, e na pag principal vai ter
+um butão onde ele vai indentificar se a janela ta aberta ou fechada-->
+
+
